@@ -2,7 +2,6 @@
 // functions.php (or plugin main file)
 
 function mytheme_enqueue_assets() {
-    // theme stylesheet
     wp_enqueue_style('mytheme-style', get_stylesheet_uri());
 
     wp_enqueue_script('jquery');
@@ -78,3 +77,12 @@ function theme_register_menus() {
     ]);
 }
 add_action('after_setup_theme', 'theme_register_menus');
+
+
+add_action('after_setup_theme','woocommerce_include');
+function woocommerce_include(){
+    add_theme_support('woocommerce');
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
+}
