@@ -1,0 +1,98 @@
+/*
+Theme Name : Awsome theme one
+Theme URI : http://wordpress.com
+Author : Maxx
+Description : New theme
+Version : 1.0
+*/
+*{
+--primary : #9efe16;
+--text:#0e1700;
+--secondary:#73fe7f;
+--background:#f8ffee;
+--accent:#38fe71;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background);
+    min-height: 70vh;
+    color: var(--text);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline:2% ;
+    background-color: var(--secondary);
+    border-radius: 12px;
+
+    
+}
+header  h1{
+        color: var(--text);
+    }
+.navbar{
+    display: flex;
+    ul{
+        list-style: none;
+        
+    }
+    a{
+        text-decoration: none;
+        color:var(--text);
+    }
+   
+
+}
+nav.navbar  ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.movie-heading{
+font-weight: 400 ;
+font-size: 2rem ;
+text-align: center ;
+}
+
+.movies-grid {
+    display: flex;
+    gap: 2%;
+}
+.movie-card{
+    /* background-color: var(--accent); */
+  border: 1px solid var(--text);
+   border-radius: 20px;
+   max-width: 289px;
+   margin-top:20px ;
+    img{
+        width: 280px;
+        height: 280px;
+        background-size: cover;
+    }
+    ul{
+        list-style: none;
+    }
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    h3,p{
+        margin: 10px;
+    }
+}
+
+.movie-card a{
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
