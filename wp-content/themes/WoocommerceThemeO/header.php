@@ -6,12 +6,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <nav>
+<?php wp_body_open(); ?>
+
+<header class="site-header">
+    <nav class="main-nav">
         <div class="nav_left">
-            <a href="<?php echo home_url('/')?>">
-                <?php bloginfo('name');?>
-            </a>
+            <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
         </div>
+
         <div class="nav_right">
             <?php
             wp_nav_menu([
@@ -22,3 +24,7 @@
             ?>
         </div>
     </nav>
+</header>
+
+<div id="page" class="site">
+    <div id="content" class="site-content">
