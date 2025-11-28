@@ -1,0 +1,44 @@
+.nav-primary {
+    ul{
+       @apply flex;
+        gap: 7px;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.brand {
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  font-style: normal;
+  color:#FF5C01
+}
+
+.avatar{
+    color:#FF5C01;
+}
+
+.navigation-bar {
+    height: 70px;
+    align-items: center !important;
+    margin-bottom: 10px;
+    
+}
+
+.nav-primary ul li{
+    background-color: #FF5C01;
+    color: whitesmoke;
+    padding: 5px;
+    padding-inline: 16px;
+    border-radius: 19px;
+
+}
+.nav-primary ul li:hover{
+    background-color: #ff5a01bf;
+    cursor: pointer;
+}
+.woocommerce-breadcrumb a{
+    text-decoration: none;
+}
